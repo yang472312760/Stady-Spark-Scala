@@ -21,7 +21,8 @@ object Spark02_Oper10 {
         //创建Spark上下文对象
         val sc: SparkContext = new SparkContext(conf)
 
-        val listRDD: RDD[Int] = sc.makeRDD(1 to 16,4)
+        val listRDD: RDD[Int] = sc.makeRDD(1 to 16, 4)
+
 
         println("分区前：" + listRDD.partitions.size)
 
